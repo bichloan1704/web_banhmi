@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --yellow-color: #ddac55;
+}
+body{
+    background-color: #fff;
+    font-family: "SemiBold";
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.card{
+    /* margin: 120px auto; */
+    width: 250px;
+    height: 320px;
+    /* background: #ebe6e6; */
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+}
+.card__img{
+    margin:auto;
+    width: 90%;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+.card__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}   
+.card__title{
+    margin-top: 10px;
+    white-space: nowrap;
+    /* overflow: hidden; */
+    text-overflow: ellipsis;
+   
+}
+.card__title{
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.5s;
+}
+ .card__price{
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.5s;
+}
+.card__price{
+    color: var(--yellow-color) ;
+}
+.card__action{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+.card__action .card__cart{
+    margin-left: 20px;
+    transition: 0.4s;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 7px;
+}
+.card__action button{
+   background:#4d360f ;
+   padding: 8px 15px;
+   border-radius: 15px;
+   border: none;
+   outline: none;
+   color: white;
+   font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+   transition: 0.3s;
+   margin-top: 5px
+}
+.card:hover .card__action{
+    transform: translateY(-65px);
+    visibility: visible;
+    opacity: 100;
+}
+.card:hover .card__title,.card:hover .card__price{
+    transform: translateY(-40px);
+    opacity: 0;
+    visibility: hidden;
+}
+.card__action button:hover{
+    background: var(--yellow-color);
+}
+.card__action .card__cart:hover{
+    background: var(--yellow-color);
+    transform: rotate(-360deg);
+}
+.card:hover .card__img{
+    transform: scale(1.1);
+}
+.card__action,.card__img,.card__title,.card__price{
+    transition-delay: 0.3s;
+}
+.card__price_1{
+    color: #4d360f;
+    font-size: 13px;
+    padding-right: 3px;
+}
