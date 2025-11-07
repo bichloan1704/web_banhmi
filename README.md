@@ -1,9 +1,9 @@
 # web_banhmi
 Used Technologies:
-    PHP
-    MySQL
-    HTML, CSS, JavaScript
-    Bootstrap
+    PHP, 
+    MySQL, 
+    HTML, CSS, JavaScript, 
+    Bootstrap, 
     SQL Query
 
 About Project:
